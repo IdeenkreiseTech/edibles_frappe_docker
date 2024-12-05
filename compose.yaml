@@ -2,7 +2,7 @@ x-customizable-image: &customizable_image
   # By default the image used only contains the `frappe` and `erpnext` apps.
   # See https://github.com/frappe/frappe_docker/blob/main/docs/custom-apps.md
   # about using custom images.
-  image: ${CUSTOM_IMAGE:-frappe/erpnext}:${CUSTOM_TAG:-$ERPNEXT_VERSION}
+  image: ghcr.io/ideenkreisetech/edibles_app/edibles_app:1.0.0
   pull_policy: ${PULL_POLICY:-always}
 
 x-depends-on-configurator: &depends_on_configurator
